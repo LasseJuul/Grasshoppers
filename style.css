@@ -40,8 +40,33 @@ section {
     text-align: center;
 }
 
-.steps
+.inspiration {
+    display: flex;
+    flex-flow: column;
+    background-color: beige;
+}
 
+h1 {
+    padding-left: 10%;
+}
+
+h3 {
+   text-align: center;
+}
+
+.images {
+    display: flex;
+}
+
+img {
+    max-width: 14%;
+    max-height: auto;
+    border: 1px solid black;
+}
+
+article {
+    align-self: center;
+}
 ///////////////////////*LINKS*///////////////////////
 
 a:link {
