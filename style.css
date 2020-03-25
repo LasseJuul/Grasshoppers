@@ -11,12 +11,12 @@ body {
 .header {
     display: flex;
     flex-flow: row;
-    padding: .5rem;
-    justify-content: space-around;
+    padding: 1rem;
     border-bottom: 2px solid black;
     background-color: black;
     list-style-type: none;
     font-size: 30px;
+    color: white;
 }
 
 a {
@@ -27,73 +27,170 @@ a {
     padding: 5px;
     font-weight: 700;
     font-style: italic;
+    margin: 0 auto;
+
 }
 
+/*
 .header-item2 {
+    position: absolute;
     background-color: white;
-    padding: 5px;
+    padding: 7px;
     border-radius: 15px;
     font-weight: 100;
     font-style: normal;
+    list-style-type: none;
+    font-size: 25px;
+    top: 2%;
+    right: 2%;
+    transition: all 0.3s ease-in-out;
+}
+*/
+
+button {
+    position: absolute;
+    background-color: white;
+    padding: 9px;
+    border-radius: 15px;
+    font-weight: 100;
+    font-size: 25px;
+    top: 2%;
+    right: 2%;
+    transition: all 0.3s ease-in-out;
 }
 
-.header-item2 li a {
-    color: black;
+button:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #ABE374;
+    color: white;
+
 }
 
+.video {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-section {
+video {
+    margin: 0 auto;
+    width: 100vw;
+    display: block;
+
+}
+
+.step {
     display: flex;
     flex-flow: row;
 }
 
 .steps {
     background-color: #ABE374;
-    padding: 5px;
+    padding: 30px;
     width: 100%;
     text-align: center;
     color: white;
 }
 
+.article {
+    display: flex;
+    filter: grayscale(100%);
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.articles {
+    display: flex;
+    flex-flow: column;
+}
+
 .inspiration {
     display: flex;
     flex-flow: column;
-    background-color: beige;
 }
 
 p {
     font-weight: 100;
     font-style: normal;
     font-size: 1.3em;
+    font-family: upgrade-lights, sans-serif;
+}
+
+.text1 {
+    width: 30%;
+    text-align: right;
+}
+
+.text2 {
+    width: 30%;
+    text-align: left;
 }
 
 h1 {
-    padding-left: 10%;
+    color: #ABE374;
+    font-size: 2em;
+    align-self: center;
+    padding-top: 1em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 5em;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
 h3 {
     text-align: center;
+    font-weight: 100;
+    font-style: normal;
+}
 
+h4 {
+    padding-left: 5%;
+    color: #ABE374;
+    font-size: 2em;
+    margin: 1em 0 .5em 0em;
+}
+
+h5 {
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2em;
+    font-family: upgrade-lights, sans-serif;
 }
 
 .images {
     display: flex;
+    filter: grayscale(100%);
 }
 
-img {
-    max-width: 14%;
+#img {
+    width: 30%;
+    margin: 1em
+}
+
+#insta {
+    max-width: 14.3%;
     max-height: auto;
-    border: 1px solid black;
+}
+
+footer {
+    background-color: #5E5E5E;
+    padding: 2rem;
+    color: white;
 }
 
 article {
-    align-self: center;
+    text-align: center;
+}
+
+.fa {
+    font-size: 60px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 ///////////////////////*LINKS*///////////////////////
@@ -108,12 +205,68 @@ a:visited {
     color: white;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: grey;
-}
-
 a:active {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    color: #ABE374;
+}
+
+@media all and (max-width: 1024px) {
+    button {
+        top: 1%;
+        right: 1%;
+    }
+
+    .text1,
+    .text2,
+    #img {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .article {
+        flex-flow: column;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 7px;
+        right: 2%;
+        top: 3%;
+    }
+
+    .header-item1 {
+        margin: 0;
+        font-size: .8em;
+    }
+
+    .text1,
+    .text2,
+    #img {
+        align-self: center;
+        width: 60%;
+        text-align: justify;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h5 {
+        margin-top: .5em;
+        font-weight: 400;
+    }
+
+    .step {
+        flex-flow: column;
+    }
+
+    .steps {
+        padding: 0;
+    }
+
 }

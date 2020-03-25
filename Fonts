@@ -1,0 +1,152 @@
+/*Upgrade Ultra Black Italic
+font-family: upgrade, sans-serif;
+font-weight: 900;
+font-style: italic;
+
+Upgrade Extra Black
+font-family: upgrade, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+
+Upgrade Bold
+font-family: upgrade, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Upgrade Bold Italic
+font-family: upgrade, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+
+Upgrade Semibold
+font-family: upgrade, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Upgrade Medium
+font-family: upgrade, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Upgrade Regular
+font-family: upgrade, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Upgrade Black Italic
+font-family: upgrade, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Upgrade Italic
+font-family: upgrade, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Upgrade Black
+font-family: upgrade, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Upgrade Extra Black Italic
+font-family: upgrade, sans-serif;
+font-weight: 800;
+font-style: italic;
+
+Upgrade Medium Italic
+font-family: upgrade, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Upgrade Ultra Black
+font-family: upgrade, sans-serif;
+font-weight: 900;
+font-style: normal;
+
+Upgrade Semibold Italic
+font-family: upgrade, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Upgrade Book
+font-family: upgrade-lights, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Upgrade Book Italic
+font-family: upgrade-lights, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+
+Upgrade Extra Light Italic
+font-family: upgrade-lights, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Upgrade Extra Light
+font-family: upgrade-lights, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+
+Upgrade Light Italic
+font-family: upgrade-lights, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Upgrade Light
+font-family: upgrade-lights, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Upgrade Thin
+font-family: upgrade-lights, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Upgrade Thin Italic
+font-family: upgrade-lights, sans-serif;
+font-weight: 200;
+font-style: italic;
+
+*/
+
+
+
+z-index: -1;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.video {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video video {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
